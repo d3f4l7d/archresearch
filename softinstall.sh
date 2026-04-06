@@ -189,7 +189,7 @@ else
     echo "|_____\___/ "
     echo
 
-    sudo pacman -S --needed --noconfirm ttf-caladea ttf-carlito ttf-dejavu ttf-liberation ttf-linux-libertine-g noto-fonts adobe-source-code-pro-fonts adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts
+    sudo pacman -S --needed --noconfirm ttf-caladea ttf-carlito ttf-dejavu ttf-liberation ttf-linux-libertine-g noto-fonts adobe-source-code-pro-fonts adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts gst-plugin-gtk
     git clone https://aur.archlinux.org/paru.git ~/.config/paru
     cd ~/.config/paru
     makepkg -sirc
