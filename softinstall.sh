@@ -198,6 +198,9 @@ else
     echo "select jdk21-openjdk 4 hsqldb2"
     paru hsqldb2-java
     sudo pacman -S --noconfirm libreoffice-fresh
+    git clone https://gitlab.freedesktop.org/gstreamer/gstreamer ~/.config/gstreamer
+    cd ~/.config/gstreamer/subprojects/gst-docs/examples/tutorials/
+    gcc basic-tutorial-1.c -o basic-tutorial-1 `pkg-config --cflags --libs gstreamer-1.0`
 
     echo "autoinstall of libreoffice -- DONE"
 fi
