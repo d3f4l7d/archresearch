@@ -133,6 +133,9 @@ else
     git clone https://aur.archlinux.org/epsonscan2.git ~/.config/epsonscan2
     cd ~/.config/epsonscan2/
     makepkg -sirc && cd
+    git clone https://aur.archlinux.org/epsonscan2-non-free-plugin.git ~/.config/epsonscan2-non-free-plugin
+    cd ~/.config/epsonscan2-non-free-plugin/
+    makepkg -sirc && cd
 
     echo "autoinstall of cups -- DONE"
 fi
