@@ -124,9 +124,15 @@ else
     echo "  \____|\___/|_|   |____/ "
     echo
 
-    sudo pacman -S --noconfirm cups libxml2-legacy
+    sudo pacman -S --noconfirm cups libxml2-legacy rapidjson
     sudo systemctl start cups
     sudo systemctl enable cups
+    git clone https://aur.archlinux.org/qt5-singleapplication.git ~/.config/qt5-singleapplication
+    cd ~/.config/qt5-singleapplication/
+    makepkg -sirc && cd
+    git clone https://aur.archlinux.org/epsonscan2.git ~/.config/epsonscan2
+    cd ~/.config/epsonscan2/
+    makepkg -sirc && cd
 
     echo "autoinstall of cups -- DONE"
 fi
