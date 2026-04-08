@@ -31,7 +31,7 @@ fi
 
 
 if pacman -Q gvfs-mtp &> /dev/null; then
-    echo "gvfs is already installed. Skip GVFS process..."
+    echo "gvfs-mtp is already installed. Skip GVFS process..."
 else
     echo
     echo "  ______     _______ ____  "
@@ -43,7 +43,7 @@ else
 
     sudo pacman -S --noconfirm gvfs gvfs-mtp gnome-disk-utility gnome-keyring gvfs-smb samba evince
 
-    echo "autoinstall of mgr -- DONE"
+    echo "autoinstall of gvfs relatives -- DONE"
 fi
 
 
