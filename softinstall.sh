@@ -270,6 +270,30 @@ else
     echo "autoinstall of Xfce4 -- DONE"
 fi
 
+if pacman -Q xfce4 &> /dev/null; then
+    echo "xfce4 is already installed. Skip XFCE4 process..."
+else
+    echo
+    echo "__  _______ ____ _____ _  _   "
+    echo "\ \/ /  ___/ ___| ____| || |  "
+    echo " \  /| |_ | |   |  _| | || |_ "
+    echo " /  \|  _|| |___| |___|__   _|"
+    echo "/_/\_\_|   \____|_____|  |_|  "
+    echo
+    
+    git clone https://aur.archlinux.org/qt5-singleapplication.git ~/.config/qt5-singleapplication
+    cd ~/.config/qt5-singleapplication/
+    makepkg -sirc && cd
+    git clone https://aur.archlinux.org/epsonscan2.git ~/.config/epsonscan2
+    cd ~/.config/epsonscan2/
+    makepkg -sirc && cd
+    git clone https://aur.archlinux.org/epsonscan2-non-free-plugin.git ~/.config/epsonscan2-non-free-plugin
+    cd ~/.config/epsonscan2-non-free-plugin/
+    makepkg -sirc && cd
+
+    echo "autoinstall of Xfce4 -- DONE"
+fi
+
 echo
 echo " ____  _____ ____   ___   ___ _____   _   _  _____        __"
 echo "|  _ \| ____| __ ) / _ \ / _ \_   _| | \ | |/ _ \ \      / /"
