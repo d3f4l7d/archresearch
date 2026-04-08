@@ -59,26 +59,6 @@ else
     echo "autoinstall of NvChad -- DONE"
 fi
 
-if ! command -v ghc &> /dev/null
-then
-    echo
-    echo " _   _    _    ____  "
-    echo "| | | |  / \  / ___| "
-    echo "| |_| | / _ \ \___ \ "
-    echo "|  _  |/ ___ \ ___) |"
-    echo "|_| |_/_/   \_\____/ "
-    echo
-
-    echo "DYYAYY"
-    curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
-
-else
-    echo "exec "$SHELL" manually"
-    echo "source ~/.zshrc"
-    echo "Haskell is already installed. Skip HAS process..."
-    ghc --version
-    which haskell-language-server-wrapper
-fi
 
 if pacman -Q python-pip &> /dev/null; then
     echo "python-pip is already installed. Skip PY process..."
@@ -113,6 +93,29 @@ else
     echo "autoinstall of Python -- DONE"
 fi
 
+
+if ! command -v ghc &> /dev/null
+then
+    echo
+    echo " _   _    _    ____  "
+    echo "| | | |  / \  / ___| "
+    echo "| |_| | / _ \ \___ \ "
+    echo "|  _  |/ ___ \ ___) |"
+    echo "|_| |_/_/   \_\____/ "
+    echo
+
+    echo "DYYAYY"
+    curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+
+else
+    echo "exec "$SHELL" manually"
+    echo "source ~/.zshrc"
+    echo "Haskell is already installed. Skip HAS process..."
+    ghc --version
+    which haskell-language-server-wrapper
+fi
+
+
 if pacman -Q cups &> /dev/null; then
     echo "cups is already installed. Skip CUPS process..."
 else
@@ -124,7 +127,7 @@ else
     echo "  \____|\___/|_|   |____/ "
     echo
 
-    sudo pacman -S --noconfirm cups libxml2-legacy rapidjson
+    sudo pacman -S --noconfirm cups libxml2-legacy
     sudo systemctl start cups
     sudo systemctl enable cups
   
