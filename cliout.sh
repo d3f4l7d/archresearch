@@ -6,7 +6,9 @@ echo "| |___| |___ | | "
 echo " \____|_____|___|"
 echo
 
+
 sudo pacman -Syu --noconfirm
+
 
 if pacman -Q zsh &> /dev/null; then
     echo "zsh is already installed. Skip ZSH process..."
@@ -40,6 +42,7 @@ else
     exit
     
 fi
+
 
 if pacman -Q neovim &> /dev/null; then
     echo "neovim is already installed. Skip NvChad process..."
