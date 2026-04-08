@@ -117,21 +117,20 @@ fi
 
 
 if pacman -Q cups &> /dev/null; then
-    echo "cups is already installed. Skip CUPS process..."
+    echo "arduino-cli is already installed. Skip ARDCLI process..."
 else
     echo
-    echo "   ____ _   _ ____  ____  "
-    echo "  / ___| | | |  _ \/ ___| "
-    echo " | |   | | | | |_) \___ \ "
-    echo " | |___| |_| |  __/ ___) |"
-    echo "  \____|\___/|_|   |____/ "
+    echo "    _    ____  ____   ____ _     ___ "
+    echo "   / \  |  _ \|  _ \ / ___| |   |_ _|"
+    echo "  / _ \ | |_) | | | | |   | |    | | "
+    echo " / ___ \|  _ <| |_| | |___| |___ | | "
+    echo "/_/   \_\_| \_\____/ \____|_____|___|"
     echo
 
-    sudo pacman -S --noconfirm cups libxml2-legacy
-    sudo systemctl start cups
-    sudo systemctl enable cups
+    sudo pacman -S --noconfirm arduino-cli
+    arduino-cli help core
   
-    echo "autoinstall of cups -- DONE"
+    echo "autoinstall of arduino-cli -- DONE"
 fi
 
 
