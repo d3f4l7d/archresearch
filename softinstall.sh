@@ -270,17 +270,18 @@ else
     echo "autoinstall of Xfce4 -- DONE"
 fi
 
-if pacman -Q xfce4 &> /dev/null; then
-    echo "xfce4 is already installed. Skip XFCE4 process..."
+if pacman -Q rapidjson &> /dev/null; then
+    echo "rapidjson is already installed. Skip XFCE4 process..."
 else
     echo
-    echo "__  _______ ____ _____ _  _   "
-    echo "\ \/ /  ___/ ___| ____| || |  "
-    echo " \  /| |_ | |   |  _| | || |_ "
-    echo " /  \|  _|| |___| |___|__   _|"
-    echo "/_/\_\_|   \____|_____|  |_|  "
+    echo " _____ ____  ____   ___  _   _ "
+    echo "| ____|  _ \/ ___| / _ \| \ | |"
+    echo "|  _| | |_) \___ \| | | |  \| |"
+    echo "| |___|  __/ ___) | |_| | |\  |"
+    echo "|_____|_|   |____/ \___/|_| \_|"
     echo
-    
+
+    sudo pacman -S --noconfirm rapidjson
     git clone https://aur.archlinux.org/qt5-singleapplication.git ~/.config/qt5-singleapplication
     cd ~/.config/qt5-singleapplication/
     makepkg -sirc && cd
@@ -291,7 +292,7 @@ else
     cd ~/.config/epsonscan2-non-free-plugin/
     makepkg -sirc && cd
 
-    echo "autoinstall of Xfce4 -- DONE"
+    echo "autoinstall of EPSON scanner drivers -- DONE"
 fi
 
 echo
