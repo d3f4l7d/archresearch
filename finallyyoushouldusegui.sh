@@ -240,7 +240,7 @@ fi
 
 
 if pacman -Q rapidjson &> /dev/null; then
-    echo "rapidjson is already installed. Skip XFCE4 process..."
+    echo "rapidjson is already installed. Skip EPSON process..."
 else
     echo
     echo " _____ ____  ____   ___  _   _ "
@@ -250,7 +250,9 @@ else
     echo "|_____|_|   |____/ \___/|_| \_|"
     echo
 
-    sudo pacman -S --noconfirm rapidjson
+    sudo pacman -S --noconfirm cups libxml2-legacy rapidjson
+    sudo systemctl start cups
+    sudo systemctl enable cups
     git clone https://aur.archlinux.org/qt5-singleapplication.git ~/.config/qt5-singleapplication
     cd ~/.config/qt5-singleapplication/
     makepkg -sirc && cd
