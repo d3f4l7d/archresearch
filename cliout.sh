@@ -119,7 +119,7 @@ else
 fi
 
 
-if pacman -Q cups &> /dev/null; then
+if pacman -Q arduino-cli &> /dev/null; then
     echo "arduino-cli is already installed. Skip ARDCLI process..."
 else
     echo
@@ -134,6 +134,23 @@ else
     arduino-cli help core
   
     echo "autoinstall of arduino-cli -- DONE"
+fi
+
+
+if pacman -Q cdparanoia &> /dev/null; then
+    echo "cdparanoia is already installed. Skip CDDA process..."
+else
+    echo
+    echo "  ____ ____  ____    _    "
+    echo " / ___|  _ \|  _ \  / \   "
+    echo "| |   | | | | | | |/ _ \  "
+    echo "| |___| |_| | |_| / ___ \ "
+    echo " \____|____/|____/_/   \__"
+    echo
+
+    sudo pacman -S --noconfirm cdparanoia
+  
+    echo "autoinstall of cdparanoia -- DONE"
 fi
 
 
