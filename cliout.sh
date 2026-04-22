@@ -109,6 +109,7 @@ then
 
     echo "DYYAYY"
     curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+    echo "autoinstall of Haskell -- DONE"
 
 else
     echo "exec "$SHELL" manually"
@@ -168,8 +169,10 @@ then
     cd ~/.config/ddgr/
     sudo make install
     ./ddgr
-  
     echo "autoinstall of ddgr -- DONE"
+    
+else
+    echo "ddgr is already installed. Skip DDGR process..."
 fi
 
 
