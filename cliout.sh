@@ -154,6 +154,25 @@ else
 fi
 
 
+if ! command -v ddgr &> /dev/null
+then
+    echo
+    echo " ____  ____   ____ ____  "
+    echo "|  _ \|  _ \ / ___|  _ \ "
+    echo "| | | | | | | |  _| |_) |"
+    echo "| |_| | |_| | |_| |  _ < "
+    echo "|____/|____/ \____|_| \_|"
+    echo
+
+    git clone https://github.com/jarun/ddgr ~/.config/ddgr
+    cd ~/.config/ddgr/
+    sudo make install
+    ./ddgr
+  
+    echo "autoinstall of ddgr -- DONE"
+fi
+
+
 echo
 echo " ____  _____ ____   ___   ___ _____   _   _  _____        __"
 echo "|  _ \| ____| __ ) / _ \ / _ \_   _| | \ | |/ _ \ \      / /"
