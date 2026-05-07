@@ -17,3 +17,9 @@ For GUI users,
 ./finallyyoushouldusegui.sh
 ```
 Enjoy it 👽
+
+MIT License
+
+Copyright (c) [year] [Full Name]
+
+...more licensing details...
