@@ -1,6 +1,9 @@
-```javascript I'm A tab
-console.log('Code Tab A');
+## Code Usage
+Just execute like below. Replace my username d3f4l7d or d3f4l7 to your username
+
+```bash
+./cliout.sh;
 ```
-```javascript I'm tab B
-console.log('Code Tab B');
+```bash
+./nvidiagpuinstall.sh;
 ```
