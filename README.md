@@ -1,9 +1,9 @@
 ## Code Usage
 Just execute like below. Replace my username d3f4l7d or d3f4l7 to your username
 
-```bash
-./cliout.sh;
 ```
-```bash
-./nvidiagpuinstall.sh;
+./cliout.sh
+```
+```
+./nvidiagpuinstall.sh
 ```
