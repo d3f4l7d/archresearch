@@ -18,8 +18,7 @@ For GUI users,
 ```
 Enjoy it 👽
 
+
 MIT License
 
-Copyright (c) [year] [Full Name]
-
-...more licensing details...
+Copyright (c) 2026 d3f4l7d
