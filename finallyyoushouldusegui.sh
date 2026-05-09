@@ -110,6 +110,10 @@ else
     cd ~/.config/paru
     makepkg -sirc
     cd
+    git clone https://aur.archlinux.org/yay-git.git ~/.config/yay-git
+    cd ~/.config/yay-git
+    makepkg -sirc
+    cd
     paru ttf-gentium-basic
     echo "select jdk21-openjdk 4 hsqldb2"
     paru hsqldb2-java
@@ -119,36 +123,6 @@ else
     gcc basic-tutorial-1.c -o basic-tutorial-1 `pkg-config --cflags --libs gstreamer-1.0`
 
     echo "autoinstall of libreoffice -- DONE"
-fi
-
-
-if ! command -v firefox &> /dev/null
-then
-    echo
-    echo "__  _____  _____ "
-    echo "\ \/ / _ \|  ___|"
-    echo " \  / | | | |_   "
-    echo " /  \ |_| |  _|  "
-    echo "/_/\_\___/|_|    "
-    echo
-
-    git clone https://aur.archlinux.org/yay-git.git ~/.config/yay-git
-    cd ~/.config/yay-git
-    makepkg -sirc
-    cd
-    echo "select pipewire-jack"
-    yay -S firefox
-
-    echo "Create /etc/xdg/autostart/xofd.desktop for autostart."
-    echo "[Desktop Entry]"
-    echo "Name=xofd"
-    echo "Exec=/usr/bin/firefox"
-    echo "Type=Application"
-    echo "Terminal=false"
-
-    echo "autoinstall of firefox -- DONE"
-else
-    echo "firefox is already installed. Skip FOX process..."
 fi
 
 
@@ -236,34 +210,6 @@ else
 
     echo "vlc-plugin will be applied after reboot"
     echo "autoinstall of vlc -- DONE"
-fi
-
-
-if pacman -Q rapidjson &> /dev/null; then
-    echo "rapidjson is already installed. Skip EPSON process..."
-else
-    echo
-    echo " _____ ____  ____   ___  _   _ "
-    echo "| ____|  _ \/ ___| / _ \| \ | |"
-    echo "|  _| | |_) \___ \| | | |  \| |"
-    echo "| |___|  __/ ___) | |_| | |\  |"
-    echo "|_____|_|   |____/ \___/|_| \_|"
-    echo
-
-    sudo pacman -S --noconfirm cups libxml2-legacy rapidjson
-    sudo systemctl start cups
-    sudo systemctl enable cups
-    git clone https://aur.archlinux.org/qt5-singleapplication.git ~/.config/qt5-singleapplication
-    cd ~/.config/qt5-singleapplication/
-    makepkg -sirc && cd
-    git clone https://aur.archlinux.org/epsonscan2.git ~/.config/epsonscan2
-    cd ~/.config/epsonscan2/
-    makepkg -sirc && cd
-    git clone https://aur.archlinux.org/epsonscan2-non-free-plugin.git ~/.config/epsonscan2-non-free-plugin
-    cd ~/.config/epsonscan2-non-free-plugin/
-    makepkg -sirc && cd
-
-    echo "autoinstall of EPSON scanner drivers -- DONE"
 fi
 
 
