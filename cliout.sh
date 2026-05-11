@@ -23,11 +23,12 @@ else
 
     sudo pacman -Syu
     sudo pacman -S --noconfirm kitty zsh wget ttf-fira-code
+    echo "Make sure to change 'd3f4l7' to <yourusername>"
     sudo chsh -s /bin/zsh d3f4l7
     sudo cat /etc/passwd | grep d3f4l7
+    echo "'exit' to exit oh-my-zsh"
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.com/clamy54/kali-like-zsh-theme/master/kali-like.zsh-theme
-    
     echo "Replace NEWLINE_BEFORE_PROMPT=yes to no on ~/.oh-my-zsh/themes/kali-like.zsh-theme."
     echo "Replace val of ZSH_THEME from robbyrussell to kali-like."
     echo "Also, do not forget exec kitty +list-fonts locally after reboot"
@@ -57,6 +58,8 @@ else
     echo
 
     sudo pacman -S --noconfirm neovim ttf-jetbrains-mono-nerd unzip
+    echo "Wait until the installation is done"
+    echo "Then, ctrl + q once, and space + th to set the theme (I love scaryforest) on nvim"
     git clone https://github.com/NvChad/starter ~/.config/nvim
     nvim
     
@@ -169,6 +172,7 @@ then
     git clone https://github.com/jarun/ddgr ~/.config/ddgr
     cd ~/.config/ddgr/
     sudo make install
+    echo "ctrl + c to exit"
     ./ddgr
     echo "autoinstall of ddgr -- DONE"
     
