@@ -11,11 +11,11 @@ chmod +x <your preferred one>.sh
 And then...
 For CLI lovers,
 ```
-./cliout.sh
+./helloworld.sh
 ```
 For ML lovers,
 ```
-./nvidiagpuinstall.sh
+./nvidiainstall.sh
 ```
 For GUI users,
 ```
