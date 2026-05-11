@@ -27,9 +27,10 @@ else
     sudo cat /etc/passwd | grep d3f4l7
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.com/clamy54/kali-like-zsh-theme/master/kali-like.zsh-theme
-
+    
+    echo "Replace NEWLINE_BEFORE_PROMPT=yes to no on ~/.oh-my-zsh/themes/kali-like.zsh-theme."
     echo "Replace val of ZSH_THEME from robbyrussell to kali-like."
-    echo "Also, do not forget exec kitty +list-fonts locally && sudo reboot"
+    echo "Also, do not forget exec kitty +list-fonts locally after reboot"
     echo "autoinstall of zsh -- DONE"
 
     echo
