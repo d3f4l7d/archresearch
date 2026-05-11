@@ -1,13 +1,21 @@
-echo 
-echo "  ____ _     ___ "
-echo " / ___| |   |_ _|"
-echo "| |   | |    | | "
-echo "| |___| |___ | | "
-echo " \____|_____|___|"
+echo
+echo " _   _      _ _        __        __         _     _ _ "
+echo "| | | | ___| | | ___   \ \      / /__  _ __| | __| | |"
+echo "| |_| |/ _ \ | |/ _ \   \ \ /\ / / _ \| '__| |/ _' | |"
+echo "|  _  |  __/ | | (_) |   \ V  V / (_) | |  | | (_| |_|"
+echo "|_| |_|\___|_|_|\___/     \_/\_/ \___/|_|  |_|\__,_(_)"
 echo
 
 
+echo "There is no choice to install 'git', right?"
+
+
 sudo pacman -Syu --noconfirm
+
+
+sudo pacman -S --noconfirm openssh ufw xorg
+sudo systemctl start sshd && sudo systemctl start ufw
+sudo systemctl enable sshd && sudo systemctl enable ufw
 
 
 if pacman -Q zsh &> /dev/null; then
@@ -181,6 +189,13 @@ else
 fi
 
 
+echo
+echo " _   _      _ _        __        __         _     _ _ "
+echo "| | | | ___| | | ___   \ \      / /__  _ __| | __| | |"
+echo "| |_| |/ _ \ | |/ _ \   \ \ /\ / / _ \| '__| |/ _' | |"
+echo "|  _  |  __/ | | (_) |   \ V  V / (_) | |  | | (_| |_|"
+echo "|_| |_|\___|_|_|\___/     \_/\_/ \___/|_|  |_|\__,_(_)"
+echo
 echo
 echo " ____  _____ ____   ___   ___ _____   _   _  _____        __"
 echo "|  _ \| ____| __ ) / _ \ / _ \_   _| | \ | |/ _ \ \      / /"
