@@ -7,7 +7,7 @@ echo " \____|\___/|___|"
 echo
 
 
-sudo pacman -Syu
+sudo pacman -Syuu
 
 
 if pacman -Q lightdm &> /dev/null; then
