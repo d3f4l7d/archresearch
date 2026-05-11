@@ -10,7 +10,7 @@ echo
 sudo pacman -Syu --noconfirm
 
 
-if pacman -Q xfce4 &> /dev/null; then
+if pacman -Q lightdm &> /dev/null; then
     echo "xfce4 is already installed. Skip XFCE4 process..."
 else
     echo
@@ -145,6 +145,8 @@ else
     cd ~/.config/textext/textext-1.13.0
     python3 setup.py
 
+    echo "sometimes, this process will make some installation errors during python3 setup.py"
+    echo "Just try few times, and it will make sense"
     echo "autoinstall of inkscape -- DONE"
 fi
 
