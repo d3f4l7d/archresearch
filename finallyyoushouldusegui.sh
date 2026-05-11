@@ -7,7 +7,7 @@ echo " \____|\___/|___|"
 echo
 
 
-sudo pacman -Syu --noconfirm
+sudo pacman -Syu
 
 
 if pacman -Q lightdm &> /dev/null; then
