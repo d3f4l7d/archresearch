@@ -39,6 +39,7 @@ else
     echo "autoinstall of Nvidia -- DONE"
 fi
 
+
 echo
 echo " ____  _____ ____   ___   ___ _____   _   _  _____        __"
 echo "|  _ \| ____| __ ) / _ \ / _ \_   _| | \ | |/ _ \ \      / /"
