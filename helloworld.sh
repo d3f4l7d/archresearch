@@ -13,9 +13,22 @@ echo "There is no choice to install 'git', right?"
 sudo pacman -Syuu
 
 
-sudo pacman -S --noconfirm openssh ufw xorg
-sudo systemctl start sshd && sudo systemctl start ufw
-sudo systemctl enable sshd && sudo systemctl enable ufw
+if ! command -v ssh &> /dev/null
+then
+    echo
+    echo " ____  _____ ____ "
+    echo "/ ___|| ____/ ___|"
+    echo "\___ \|  _|| |    "
+    echo " ___) | |__| |___ "
+    echo "|____/|_____\____|"
+    echo
+
+    sudo pacman -S --noconfirm openssh ufw xorg
+    sudo systemctl start sshd && sudo systemctl start ufw
+    sudo systemctl enable sshd && sudo systemctl enable ufw
+else
+    echo "openssh is already installed. Skip SEC process..."
+fi
 
 
 if pacman -Q zsh &> /dev/null; then
