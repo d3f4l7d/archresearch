@@ -53,6 +53,7 @@ else
     echo "Replace NEWLINE_BEFORE_PROMPT=yes to no on ~/.oh-my-zsh/themes/kali-like.zsh-theme."
     echo "Replace val of ZSH_THEME from robbyrussell to kali-like."
     echo "Also, do not forget exec kitty +list-fonts locally after reboot"
+    echo "Change the val, enabled_layouts tall:bias=50;full_size=1;mirrored=false (~/.config/kitty/kitty.conf)"
     echo "autoinstall of zsh -- DONE"
 
     echo
