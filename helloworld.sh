@@ -52,8 +52,9 @@ else
     wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.com/clamy54/kali-like-zsh-theme/master/kali-like.zsh-theme
     echo "Replace NEWLINE_BEFORE_PROMPT=yes to no on ~/.oh-my-zsh/themes/kali-like.zsh-theme."
     echo "Replace val of ZSH_THEME from robbyrussell to kali-like."
-    echo "Also, do not forget exec kitty +list-fonts locally after reboot"
-    echo "Change the val, enabled_layouts fat:bias=50;full_size=1;mirrored=true (~/.config/kitty/kitty.conf)"
+    echo "(Not for Console) 'kitty +list-fonts' to change fonts to your preferred one such as Fira Code in my case."
+    echo "(Not for Console) 'enabled_layouts fat:bias=50;full_size=1;mirrored=true' in ~/.config/kitty/kitty.conf for normal use."
+    echo "(Not for Console) 'enabled_layouts grid' in ~/.config/kitty/kitty.conf for grid."
     echo "autoinstall of zsh -- DONE"
 
     echo
