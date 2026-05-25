@@ -40,3 +40,26 @@ if [ ! -f ~/.local/share/AppImage/arduino-ide_2.3.7_Linux_64bit.AppImage ]; then
 else
     echo "Arduino is already installed. Skip INO process..."
 fi
+
+
+if ! command -v jekyll &> /dev/null
+then
+    echo
+    echo "     _ _   _ "
+    echo "    | | | | |"
+    echo " _  | | |_| |"
+    echo "| |_| |  _  |"
+    echo " \___/|_| |_|"
+    echo
+
+    sudo pacman -S --noconfirm ruby ruby-erb
+    ruby -v
+    echo 'export GEM_HOME="$HOME/.config/gems"' >> ~/.zshrc
+    echo 'export PATH="$HOME/.local/share/gem/ruby/3.4.0/bin:$PATH"' >> ~/.zshrc
+    echo "source ~/.zshrc manually, and then..."
+    echo "sudo gem update --system 4.0.11"
+    echo "gem install --install-dir=~/.config/hyde jekyll bundler"
+    echo "autoinstall of Jekyll -- DONE"
+else
+    echo "Jekyll is already installed. Skip JH process..."
+fi
