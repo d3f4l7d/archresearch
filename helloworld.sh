@@ -13,24 +13,6 @@ echo "There is no choice to install 'git', right?"
 sudo pacman -Syuu
 
 
-if ! command -v ssh &> /dev/null
-then
-    echo
-    echo " ____  _____ ____ "
-    echo "/ ___|| ____/ ___|"
-    echo "\___ \|  _|| |    "
-    echo " ___) | |__| |___ "
-    echo "|____/|_____\____|"
-    echo
-
-    sudo pacman -S --noconfirm openssh ufw xorg
-    sudo systemctl start sshd && sudo systemctl start ufw
-    sudo systemctl enable sshd && sudo systemctl enable ufw
-else
-    echo "openssh is already installed. Skip SEC process..."
-fi
-
-
 if pacman -Q zsh &> /dev/null; then
     echo "zsh is already installed. Skip ZSH process..."
 else
@@ -45,8 +27,8 @@ else
     sudo pacman -Syu
     sudo pacman -S --noconfirm kitty zsh wget ttf-fira-code
     echo "Make sure to change 'd3f4l7' to <yourusername>"
-    sudo chsh -s /bin/zsh d3f4l7
-    sudo cat /etc/passwd | grep d3f4l7
+    sudo chsh -s /bin/zsh $USER
+    sudo cat /etc/passwd | grep $USER
     echo "'exit' to exit oh-my-zsh"
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.com/clamy54/kali-like-zsh-theme/master/kali-like.zsh-theme
