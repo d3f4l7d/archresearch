@@ -230,7 +230,7 @@ then
     echo 'export GEM_HOME="$HOME/.config/gems"' >> ~/.zshrc
     echo 'export PATH="$HOME/.local/share/gem/ruby/3.4.0/bin:$PATH"' >> ~/.zshrc
     echo "source ~/.zshrc manually, and then..."
-    echo "sudo gem update --system 4.0.11"
+    echo "sudo gem update --system 4.0.12"
     echo "gem install --install-dir=~/.config/hyde jekyll bundler"
     echo "autoinstall of Jekyll -- DONE"
 else
