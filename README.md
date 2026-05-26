@@ -23,11 +23,7 @@ For GUI users,
 ```
 Enjoy it 👽
 
-## Jekyll Installation
-Just execute like the below.
-```
-./jekyllinstall.sh
-```
+
 ## Jekyll man
 To generate a completely new website, execute like the below.
 ```
