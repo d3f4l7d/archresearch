@@ -8,7 +8,8 @@ This repository will give you "lazy" way to install some fundamental programs fo
 4. haskell
 5. arduino-cli
 6. cdparanoia
-7. ddgr
+7. android-tools
+8. ddgr
 
 `finallyyoushouldusegui.sh`
 1. xfce4
