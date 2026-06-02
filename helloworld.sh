@@ -161,8 +161,29 @@ else
     echo
 
     sudo pacman -S --noconfirm cdparanoia
-  
+    cdparanoia --help
     echo "autoinstall of cdparanoia -- DONE"
+fi
+
+
+if ! command -v adb &> /dev/null
+then
+    echo
+    echo "    _    ____  ____  "
+    echo "   / \  |  _ \| __ ) "
+    echo "  / _ \ | | | |  _ \ "
+    echo " / ___ \| |_| | |_) |"
+    echo "/_/   \_\____/|____/ "
+    echo
+
+    sudo pacman -S --noconfirm android-tools
+    adb --help
+    echo "'adb devices' after turning on the USB Debug Mode on the android (Tap 'Build #' 7 times)"
+    echo "'adb shell settings put system csc_pref_camera_forced_shuttersound_key 0' if you want"
+    echo "autoinstall of adb -- DONE"
+    
+else
+    echo "adb is already installed. Skip ADB process..."
 fi
 
 
