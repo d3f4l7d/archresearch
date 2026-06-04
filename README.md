@@ -18,10 +18,11 @@ This repository will give you "lazy" way to install some fundamental programs fo
 4. ibus
 5. libreoffice
 6. inkscape
-7. freecad
-8. kicad
-9. vlc
-10. jekyll
+7. EB-Garamond
+8. freecad
+9. kicad
+10. vlc
+11. jekyll
 
 > [!WARNING]
 > password will be needed for some steps in finallyyoushouldusegui.sh (around LO step). So, type it when that happens. 
