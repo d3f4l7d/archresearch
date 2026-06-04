@@ -151,6 +151,31 @@ else
 fi
 
 
+if pacman -Q fontforge &> /dev/null; then
+    echo "EB-Garamond is already installed. Skip EBG process..."
+else
+    echo
+    echo " _____ ____   ____ "
+    echo "| ____| __ ) / ___|"
+    echo "|  _| |  _ \| |  _ "
+    echo "| |___| |_) | |_| |"
+    echo "|_____|____/ \____|"
+    echo
+
+    sudo pacman -S --noconfirm fontforge
+    git clone https://aur.archlinux.org/ttfautohint.git ~/.config/ttfautohint/
+    cd ~/.config/ttfautohint/
+    gpg --recv-keys C1A60EACE707FDA5
+    makepkg -sirc
+    git clone https://github.com/georgd/EB-Garamond.git ~/.config/EB-Garamond/
+    cd ~/.config/EB-Garamond/
+    make
+    sudo cp -r ~/.config/EB-Garamond/build/ /usr/share/fonts/EB-Garamond/
+
+    echo "autoinstall of EB-Garamond -- DONE"
+fi
+
+
 if pacman -Q freecad &> /dev/null; then
     echo "freecad is already installed. Skip CAD process..."
 else
