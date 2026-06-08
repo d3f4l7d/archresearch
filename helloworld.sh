@@ -51,6 +51,7 @@ fi
 
 if pacman -Q zsh &> /dev/null; then
     #!/bin/zsh
+    echo "zsh detected"
 else
     echo "zsh is not installed."
     echo "This script was tested under zsh."
