@@ -35,15 +35,15 @@ chmod +x <your preferred one>.sh
 And then...
 For CLI lovers,
 ```
-./helloworld.sh 2>&1 | tee ~/.d3f4l7d/autoinstall/log/helloworld_stdouterr.txt
+./helloworld.sh 2>&1 | tee helloworld_stdouterr.txt
 ```
 For ML lovers,
 ```
-./nvidiainstall.sh 2>&1 | tee ~/.d3f4l7d/autoinstall/log/nvidiainstall_stdouterr.txt
+./nvidiainstall.sh 2>&1 | tee nvidiainstall_stdouterr.txt
 ```
 For GUI users,
 ```
-./finallyyoushouldusegui.sh 2>&1 | tee ~/.d3f4l7d/autoinstall/log/finallyyoushouldusegui_stdouterr.txt
+./finallyyoushouldusegui.sh 2>&1 | tee finallyyoushouldusegui_stdouterr.txt
 ```
 Enjoy it 👽
 
