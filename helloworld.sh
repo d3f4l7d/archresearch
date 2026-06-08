@@ -7,7 +7,7 @@ echo "|_| |_|\___|_|_|\___/     \_/\_/ \___/|_|  |_|\__,_(_)"
 echo
 
 
-sudo pacman -Syuu
+sudo pacman -Syuu 2>&1 | tee errlog.txt
 
 
 if pacman -Q zsh &> /dev/null; then
