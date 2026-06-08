@@ -7,9 +7,6 @@ echo "|_| |_|\___|_|_|\___/     \_/\_/ \___/|_|  |_|\__,_(_)"
 echo
 
 
-echo "There is no choice to install 'git', right?"
-
-
 sudo pacman -Syuu
 
 
