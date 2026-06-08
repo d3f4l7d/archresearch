@@ -22,7 +22,7 @@ This repository will give you "lazy" way to install some fundamental programs fo
 8. freecad
 9. kicad
 10. vlc
-11. jekyll
+<!--11. jekyll-->
 
 > [!WARNING]
 > password will be needed for some steps in finallyyoushouldusegui.sh (around LO step). So, type it when that happens. 
