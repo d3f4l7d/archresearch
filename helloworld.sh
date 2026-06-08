@@ -52,6 +52,10 @@ else
 fi
 
 
+echo "Using zsh from the following processes"
+#!/bin/zsh
+
+
 if pacman -Q neovim &> /dev/null; then
     echo "neovim is already installed. Skip NvChad process..."
 else
