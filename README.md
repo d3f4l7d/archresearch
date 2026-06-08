@@ -47,7 +47,7 @@ For GUI users,
 ```
 Enjoy it 👽
 
-
+<!--
 ## Jekyll man
 To generate a completely new website, execute like the below.
 ```
@@ -66,6 +66,6 @@ To access your server, click the below in the console log.
 Click or access http://localhost:4000
 ```
 Deploy your website with your preffered service (I love Github pages BTW).
-
+-->
 ## License
 MIT License - see [LICENSE](/LICENSE) for more details.
