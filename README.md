@@ -39,7 +39,7 @@ For CLI lovers,
 ```
 For ML lovers,
 ```
-./nvidiainstall.sh 2>&1 | tee ~/.d3f4l7d/autoinstall/log/nvidia_stdouterr.txt
+./nvidiainstall.sh 2>&1 | tee ~/.d3f4l7d/autoinstall/log/nvidiainstall_stdouterr.txt
 ```
 For GUI users,
 ```
