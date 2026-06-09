@@ -23,7 +23,6 @@ else
 
     sudo pacman -Syu
     sudo pacman -S --noconfirm kitty zsh wget ttf-fira-code
-    echo "Make sure to change 'd3f4l7' to <yourusername>"
     sudo chsh -s /bin/zsh $USER
     sudo cat /etc/passwd | grep $USER
     echo "'exit' to exit oh-my-zsh"
