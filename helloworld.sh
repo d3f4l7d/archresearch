@@ -117,8 +117,7 @@ else
 fi
 
 
-if ! command -v ghc &> /dev/null
-then
+if ! command -v ghc &> /dev/null; then
     echo
     echo " _   _    _    ____  "
     echo "| | | |  / \  / ___| "
@@ -179,8 +178,7 @@ else
 fi
 
 
-if ! command -v adb &> /dev/null
-then
+if ! command -v adb &> /dev/null; then
     echo
     echo "    _    ____  ____  "
     echo "   / \  |  _ \| __ ) "
@@ -200,8 +198,7 @@ else
 fi
 
 
-if ! command -v ddgr &> /dev/null
-then
+if ! command -v ddgr &> /dev/null; then
     echo
     echo " ____  ____   ____ ____  "
     echo "|  _ \|  _ \ / ___|  _ \ "
