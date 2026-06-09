@@ -154,6 +154,9 @@ else
 
     sudo pacman -S --noconfirm arduino-cli
     arduino-cli help core
+    arduino-cli config init
+    mkdir ~/.ardcli/
+    arduino-cli sketch new ~/.ardcli/test
   
     echo "autoinstall of arduino-cli -- DONE"
 fi
