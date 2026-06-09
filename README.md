@@ -1,28 +1,29 @@
 ## Introduction
 This repository will give you "lazy" way to install some fundamental programs for my Arch Linux basic usage. Those codes below will automatically install some softwares by just executing codes. These code will automatically install these programs below:
 
-`helloworld.sh`
-1. zsh
-2. nvim (NvChad)
-3. python
-4. haskell
-5. arduino-cli
-6. cdparanoia
-7. android-tools
-8. ddgr
+| # | softwares in `helloworld.sh` |
+| - | ---------------------------- |
+| 1 | zsh |
+| 2 | nvim (NvChad) |
+| 3 | python |
+| 4 | haskell |
+| 5 | arduino-cli |
+| 6 | cdparanoia |
+| 7 | android-tools |
+| 8 | ddgr |
 
-`finallyyoushouldusegui.sh`
-1. xfce4
-2. gvfs
-3. bluetooth
-4. ibus
-5. libreoffice
-6. inkscape
-7. EB-Garamond
-8. freecad
-9. kicad
-10. vlc
-<!--11. jekyll-->
+| #  | softwares in `finallyyoushouldusegui.sh`|
+| -- | --------------------------------------- |
+| 01 | xfce4 |
+| 02 | gvfs |
+| 03 | bluetooth |
+| 04 | ibus |
+| 05 | libreoffice |
+| 06 | inkscape |
+| 07 | EB-Garamond |
+| 08 | freecad |
+| 09 | kicad |
+| 10 | vlc |
 
 > [!WARNING]
 > password will be needed for some steps in finallyyoushouldusegui.sh (around LO step). So, type it when that happens. 
