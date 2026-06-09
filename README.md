@@ -1,16 +1,16 @@
 ## Introduction
 This repository will give you "lazy" way to install some fundamental programs for my Arch Linux basic usage. Those codes below will automatically install some softwares by just executing codes. These code will automatically install these programs below:
 
-| # | softwares in `helloworld.sh` |
-| - | ---------------------------- |
-| 1 | zsh |
-| 2 | nvim (NvChad) |
-| 3 | python |
-| 4 | haskell |
-| 5 | arduino-cli |
-| 6 | cdparanoia |
-| 7 | android-tools |
-| 8 | ddgr |
+| #  | softwares in `helloworld.sh` |
+| -- | ---------------------------- |
+| 01 | zsh |
+| 02 | nvim (NvChad) |
+| 03 | python |
+| 04 | haskell |
+| 05 | arduino-cli |
+| 06 | cdparanoia |
+| 07 | android-tools |
+| 08 | ddgr |
 
 | #  | softwares in `finallyyoushouldusegui.sh`|
 | -- | --------------------------------------- |
