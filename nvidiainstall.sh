@@ -29,7 +29,7 @@ else
     echo "switch Kernel driver in use: nouveau to nvidia"
     echo "also switch Kernel modules: nouveau to nouveau, nvidia_drm, nvidia"
     echo "In the end, if you could see nvidia-smi, it works!"
-    mkdir ~/.config/d3f4l7d/nvidia
+    mkdir ~/.config/d3f4l7d/archresearch/nvidia
     wget -O ~/.config/d3f4l7d/archresearch/nvidia/gcc12-12.3.0-6-x86_64.pkg.tar.zst https://archive.archlinux.org/packages/g/gcc12/gcc12-12.3.0-6-x86_64.pkg.tar.zst
     wget -O ~/.config/d3f4l7d/archresearch/nvidia/gcc12-libs-12.3.0-6-x86_64.pkg.tar.zst https://archive.archlinux.org/packages/g/gcc12-libs/gcc12-libs-12.3.0-6-x86_64.pkg.tar.zst
     wget -O ~/.config/d3f4l7d/archresearch/nvidia/cuda-12.3.2-1-x86_64.pkg.tar.zst https://archive.archlinux.org/packages/c/cuda/cuda-12.3.2-1-x86_64.pkg.tar.zst
